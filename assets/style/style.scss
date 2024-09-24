@@ -1,0 +1,121 @@
+@font-face {
+  font-family: vazir;
+  src: url(../font/Vazir-Bold-FD-WOL.woff);
+}
+.dark-mode {
+  background-color: rgb(65, 64, 64);
+}
+body {
+  margin: 0%;
+  padding: 0%;
+  width: 100%;
+  height: 100vh;
+  font-family: "Hanken Grotesk", sans-serif;
+  background-color: #ffffff;
+  color: #ffffff;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+
+  .main {
+    width: 400px;
+    height: 700px;
+    backdrop-filter: blur(1rem);
+    background-color: #e37043;
+    border-radius: 2rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    .nav {
+      width: 100%;
+      height: 30%;
+      display: flex;
+      flex-direction: column;
+      gap: 1rem;
+      align-items: center;
+      #Search {
+        font-family: "Hanken Grotesk", sans-serif;
+        width: 80%;
+        height: 30px;
+        border-radius: 20px;
+        border: none;
+        font-size: 1rem;
+        text-align: center;
+      }
+
+      #add {
+        font-family: "Hanken Grotesk", sans-serif;
+        width: 80%;
+        height: 30px;
+        border-radius: 20px;
+        border: none;
+        font-size: 1rem;
+        text-align: center;
+      }
+      .submit {
+        font-family: "Hanken Grotesk", sans-serif;
+        width: 60%;
+        height: 30px;
+        border-radius: 20px;
+        border: none;
+        font-size: 1rem;
+        text-align: center;
+        background-color: #ffffff;
+      }
+      .submit:hover {
+        background-color: #e0a993;
+      }
+      .dark-mod {
+        font-family: "Hanken Grotesk", sans-serif;
+        width: 60%;
+        height: 30px;
+        border-radius: 20px;
+        border: none;
+        font-size: 1rem;
+        text-align: center;
+        background-color: #ffffff;
+      }
+      .dark-mod:hover {
+        background-color: rgb(65, 64, 64);
+        color: #ffffff;
+      }
+    }
+  }
+  .content {
+    padding: 0%;
+    width: 100%;
+    border: none;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    color: gray;
+    .row {
+      background-color: white;
+      font-family: vazir;
+      display: flex;
+      flex-direction: row-reverse;
+      justify-content: space-around;
+      align-items: center;
+      width: 60%;
+      height: 30px;
+      border-radius: 0.4rem;
+      margin-bottom: 0.2rem;
+      padding: 7px 7px;
+
+      .Delete {
+        font-family: vazir;
+        background-color: #e37043;
+        color: rgba(255, 255, 255, 0.712);
+        border: none;
+        border-radius: 0.5rem;
+        padding: 3px 7px;
+      }
+      .Delete:hover {
+        background-color: #ffffff;
+        color: gray;
+      }
+    }
+  }
+}
